@@ -230,38 +230,31 @@ Use getArtistByIndex to do the following:
 
 🌟 EXAMPLE: if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(array, number) {
+  return `the artist at index ${array[number].id} is ${array[number].name}`;
+
 }
 
-
+console.log('task 3:', getArtistByIndex(artists, 2));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use listOfNames to do the following: 
-1. Receive the artist array as an argument from a parameter 
+1. Receive the artist array as in argument from a parameter //
 2. Create a new array that is a copy of the parameter array
 3. Loop over the new array and update each index of the array to equal just the artist's name
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(/*Your Code Here*/) {
-  /*Your Code Here*/
+
+
+function listOfNames(...artists){
+return 
 }
 
 
-
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
-Use removeArtist to do the following:
-1. Receive the artist array as an argument passed from the FIRST parameter
-2. Receive a number, which is the desired index in the array, as an argument passed from the SECOND parameter
-3. Create a new array that is a copy of the parameter array 
-4. Remove an artist from the copied array at the desired index
-5. Return the resulting copied array
-🌟 EXAMPLE: if removeArtist is invoked with the artists array and the number 0, it will return the resulting array with Amedeo Modigliani removed from our dataset. */
-
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
-}
+function removeArtist(array, number) {
+  return {...array[number].pop };
+} 
 
 
 
